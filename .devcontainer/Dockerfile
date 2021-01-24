@@ -19,6 +19,9 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 RUN apt install -y python3 python3-pip
 RUN pip3 install --upgrade pip
 
+COPY packages/regression_model/requirements.txt /
+RUN pip3 install -r requirements.txt
+
 #COPY ./../packages/regression_model/requirements.txt /
 #RUN pip3 install -r /workspaces/cours-A61/packages/regression_model/requirements.txt
 
