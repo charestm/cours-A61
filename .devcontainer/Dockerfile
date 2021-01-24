@@ -22,4 +22,4 @@ RUN apt install -y python3 python3-pip
 RUN pip3 install --upgrade pip
 
 #/home/vscode/
-RUN pip3 install -r ./packages/regression_model/requirements.txt
+RUN pip3 install -r /workspaces/cours-A61/packages/regression_model/requirements.txt
