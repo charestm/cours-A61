@@ -16,5 +16,5 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 # RUN apt update
 # RUN apt -y full-upgrade
 
-RUN apt install -y python3 python3-pip
+RUN apt install -y python3 python3-pip python3-venv
 RUN pip3 install --upgrade pip
