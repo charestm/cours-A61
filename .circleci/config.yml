@@ -16,6 +16,7 @@ jobs:
             pip install kaggle
             chmod +x ./scripts/fetch_kaggle_dataset.sh
             ./scripts/fetch_kaggle_dataset.sh
+            pip install -e packages/regression_model
             py.test -vv packages/regression_model/tests
 
   test_ml_api:
@@ -31,7 +32,6 @@ jobs:
             . venv/bin/activate
             pip install --upgrade pip
             pip install -r packages/ml_api/requirements.txt
-            pip install kaggle
             py.test -vv packages/ml_api/tests
 
   train_and_upload_regression_model:
@@ -46,6 +46,7 @@ jobs:
             virtualenv venv
             . venv/bin/activate
             pip install -r packages/regression_model/requirements.txt
+            pip install kaggle
       - run: 
           name: Publish model
           command: |
