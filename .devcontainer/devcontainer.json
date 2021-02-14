@@ -22,7 +22,8 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "uname -a",
-	"postCreateCommand": "pip3 install -r packages/regression_model/requirements.txt && pip3 install tox && pip3 install -r packages/ml_api/requirements.txt && pip3 install pytest-pythonpath",
+	//pip3 install -r packages/regression_model/requirements.txt && pip3 install tox && pip3 install -r packages/ml_api/requirements.txt && pip3 install pytest-pythonpath
+	"postCreateCommand": "",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
